@@ -15,7 +15,7 @@ For testing your solution with the official judge IO from the contest you must h
 In order to run all your code, you must follow the steps below:
 * Clone the repository
 * Change directory to the *src/* folder
-* Paste your code there, assuming you have named the files with the following format:
+* Paste your code there (and overwrite local files), assuming you have named the files with the following format:
     * Solution to problem a -> a.cpp or a.java or a.py
     * Solution to problem b -> b.cpp or b.java or b.py
     * ...
