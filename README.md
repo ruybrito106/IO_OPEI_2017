@@ -1,24 +1,32 @@
 # IO_OPEI_2017
 
-The following files are samples to the IO, generators and solutions for the proposed problems presented at the third edition of **Olimpiada Pernambucana de Informática**.
+The following files are samples to the IO, generators and solutions for the proposed problems presented at the third edition of **Olimpíada Pernambucana de Informática 2017**.
 
 ## Dependencies
 
-For testing your solution with the IO from the official judge setter you must have installed:
+For testing your solution with the official judge IO from the contest you must have installed at least one of the following:
 
-* Java 8 or later
-* C++98 or later
-* Python 2.7 or later
+* Java 7 or later
+* C++11 or later
+* Python 2.7.6 or later
 
 ## Getting started
 
 In order to run all your code, you must follow the steps below:
 * Clone the repository
-* Change directory to the *io/* folder
+* Change directory to the *src/* folder
 * Paste your code there, assuming you have named the files with the following format:
-    * Solution to problem A -> A.cpp or A.java or A.py
-* Run the following code:
+    * Solution to problem a -> a.cpp or a.java or a.py
+    * Solution to problem b -> b.cpp or b.java or b.py
+    * ...
+    * Solution to problem z -> z.cpp or z.java or z.py
+* Change directory to the *root*
+* Run the *TestSolution* script
 
 ```bash
-$ bash TestSolution.sh
+git clone "https://github.com/ruybrito106/IO_OPEI_2017.git"
+cd src
+# Paste code
+cd ..
+bash TestSolution.sh
 ```
