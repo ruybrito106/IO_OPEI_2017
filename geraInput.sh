@@ -44,3 +44,12 @@ do
 done
 
 rm F/g
+
+g++ G/gerador.cpp -o G/g -std=c++11
+
+for (( i=0; i<100; i++));
+do
+  ./G/g $((RANDOM % 100)) $((RANDOM % 100)) > G/g$((i)).in
+done
+
+rm G/g

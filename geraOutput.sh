@@ -44,3 +44,13 @@ do
 done
 
 rm F/s
+
+g++ G/solucao.cpp -o G/s -std=c++11
+
+for (( i=0; i<100; i++));
+do
+  ./G/s < G/g$((i)).in > G/g$((i)).out
+done
+
+rm G/s
+
