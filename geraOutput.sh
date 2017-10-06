@@ -54,3 +54,12 @@ done
 
 rm G/s
 
+g++ H/solucao.cpp -o H/s -std=c++11
+
+for (( i=0; i<100; i++));
+do
+  ./H/s < H/h$((i)).in > H/h$((i)).out
+done
+
+rm H/s
+

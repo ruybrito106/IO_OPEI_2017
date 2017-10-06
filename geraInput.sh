@@ -53,3 +53,12 @@ do
 done
 
 rm G/g
+
+g++ H/gerador.cpp -o H/g -std=c++11
+
+for (( i=0; i<100; i++));
+do
+  ./H/g $((RANDOM % 99999)) $((RANDOM % 2)) > H/h$((i)).in
+done
+
+rm H/g

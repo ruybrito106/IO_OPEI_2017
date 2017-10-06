@@ -2,6 +2,6 @@
 
 bash geraInput.sh
 
-sleep 1
+sleep 10
 
 bash geraOutput.sh
