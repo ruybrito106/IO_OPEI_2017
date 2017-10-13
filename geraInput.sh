@@ -62,3 +62,12 @@ do
 done
 
 rm H/g
+
+g++ J/gerador.cpp -o J/g -std=c++11
+
+for (( i=0; i<100; i++));
+do
+  ./J/g $((RANDOM % 24)) $((RANDOM % 60)) $((RANDOM % 24)) $((RANDOM % 60)) > J/j$((i)).in
+done
+
+rm J/g

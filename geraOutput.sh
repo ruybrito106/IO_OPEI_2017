@@ -63,3 +63,11 @@ done
 
 rm H/s
 
+g++ J/solucao.cpp -o J/s -std=c++11
+
+for (( i=0; i<100; i++));
+do
+  ./J/s < J/j$((i)).in > J/j$((i)).out
+done
+
+rm J/s
