@@ -27,6 +27,15 @@ done
 
 rm C/g
 
+g++ D/gerador.cpp -o D/g -std=c++11
+
+for (( i=0; i<100; i++));
+do
+  ./D/g $((RANDOM % 100000)) $((RANDOM % 1000000)) > D/d$((i)).in
+done
+
+rm D/g
+
 g++ E/gerador.cpp -o E/g -std=c++11
 
 for (( i=0; i<100; i++));
@@ -62,6 +71,15 @@ do
 done
 
 rm H/g
+
+g++ I/gerador.cpp -o I/g -std=c++11
+
+for (( i=0; i<100; i++));
+do
+  ./I/g $((RANDOM % 10000)) $((RANDOM % 1000)) > I/i$((i)).in
+done
+
+rm I/g
 
 g++ J/gerador.cpp -o J/g -std=c++11
 

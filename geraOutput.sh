@@ -27,6 +27,15 @@ done
 
 rm C/s
 
+g++ D/solucao.cpp -o D/s
+
+for (( i=0; i<100; i++));
+do
+  ./D/s < D/d$((i)).in > D/d$((i)).out
+done
+
+rm D/s
+
 g++ E/solucao.cpp -o E/s
 
 for (( i=0; i<100; i++));
@@ -62,6 +71,15 @@ do
 done
 
 rm H/s
+
+g++ I/solucao.cpp -o I/s -std=c++11
+
+for (( i=0; i<100; i++));
+do
+  ./I/s < I/i$((i)).in > I/i$((i)).out
+done
+
+rm I/s
 
 g++ J/solucao.cpp -o J/s -std=c++11
 
